@@ -1,0 +1,23 @@
+{
+	"Search Data": [
+		{
+			"Email": "sivifo8824@inmail92.com",
+			"Password": "abc12345",
+			"Consulta": "arriendo de una casa",
+			"Region": " --- Región Metropolitana",
+			"Categoria": "Arrendar",
+			"Tipo": "Casa",
+			"Percio_Minimo": "$ 300.000",
+			"Precio_Maximo": "$ 600.000",
+			"Cuartos_Minimo": "2 dormitorios",
+			"Cuartos_Maximo": "3 dormitorios",
+			"Tamaño_Minimo": "60 m²",
+			"Tamaño_Maximo": "180 m²",
+			"Baño_Minimo": "1 baño",
+			"Baño_Maximo": "2 baños",
+			"Minimo_Condominio": "$ 25.000",
+			"Maximo_Condominio": "$ 150.000",
+			"Garage": "1"
+		}
+	]
+}
