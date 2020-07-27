@@ -4,13 +4,13 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.base.Base;
-import com.proyect.dataprovider.DataProviderSearch;
+import com.proyect.dataprovider.DataProviders;
 import com.proyect.page.SearchPage;
 
 public class SearchTest extends Base{
 	
 
-  @Test(description="Buscar un articulo", dataProvider ="SearchData", dataProviderClass=DataProviderSearch.class)
+  @Test(description="Buscar un articulo", dataProvider ="SearchData", dataProviderClass=DataProviders.class)
   public void searchTest(String Email, String Password, String Consulta, String Region, String Categoria, String Tipo, String Percio_Minimo, String Precio_Maximo, String Cuartos_Minimo, String Cuartos_Maximo, String Tamaño_Minimo,String Tamaño_Maximo, String Baño_Minimo, String Baño_Maximo, String Minimo_Condominio, String Maximo_Condominio, String Garage) {
 	  
 	  SearchPage searchPage = new SearchPage(driver);

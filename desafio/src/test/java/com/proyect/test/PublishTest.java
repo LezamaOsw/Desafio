@@ -4,12 +4,12 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.base.Base;
-import com.proyect.dataprovider.DataProviderPublish;
+import com.proyect.dataprovider.DataProviders;
 import com.proyect.page.PublishPage;
 
 public class PublishTest extends Base{
 	
-  @Test(description="Publicar un articulo", dataProvider ="PublishData",  dataProviderClass=DataProviderPublish.class)
+  @Test(description="Publicar un articulo", dataProvider ="PublishData",  dataProviderClass=DataProviders.class)
   public void Publish(String Email,String Password,String Categoria,String Condicion,String Genero,String Talla,String Titulo,String Contenido,String Precio,String Imagen,String Region,String Comuna) {
 	  
 	  PublishPage publishPage = new PublishPage(driver);

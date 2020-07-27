@@ -4,12 +4,12 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.base.Base;
-import com.proyect.dataprovider.DataProviderRegister;
+import com.proyect.dataprovider.DataProviders;
 import com.proyect.page.RegisterPage;
 
 public class RegisterTest extends Base{	
   
-  @Test(description="Registrar un usuario", dataProvider ="RegisterData",  dataProviderClass=DataProviderRegister.class)
+  @Test(description="Registrar un usuario", dataProvider ="RegisterData",  dataProviderClass=DataProviders.class)
   public void publishTest(String Nombre,String Region,String Comuna,String Numero_Telefono,String Email,String Password,String Verificacion) {
 	  
 	  RegisterPage registerPage = new RegisterPage(driver);
